@@ -1,0 +1,34 @@
+.same-or-not-wrapper {
+  display: flex;
+  flex-direction: column;
+  .exercise-same-or-not {
+    margin-top: 1.6rem;
+    margin-left: 2rem;
+    .same-or-not-question {
+      display: flex;
+      margin-bottom: 0.8rem;
+      .question-key {
+        display: flex;
+        align-items: center;
+        .checkbox {
+          margin-right: 0.8rem;
+          width: 1.6rem;
+          height: 1.6rem;
+        }
+      }
+      .question-key.false {
+        color: red;
+        font-style: italic;
+      }
+      .question-key.true {
+        color: #00e676;
+        font-style: italic;
+      }
+    }
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+  }
+}

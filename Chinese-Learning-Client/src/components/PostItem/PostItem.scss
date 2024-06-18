@@ -1,0 +1,31 @@
+@import '../../theme/global-color.scss';
+.post-container {
+  margin-bottom: 30px;
+  cursor: pointer;
+  .post-details {
+    min-height: 80px;
+    padding: 0 5px;
+    .post-time {
+      font-size: 11px;
+      color: rgba(83, 83, 83, 0.7);
+      margin-top: 5px;
+    }
+    .post-title {
+      text-transform: uppercase;
+      font-size: 16px;
+      color: #000;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  }
+}
+.post-container:hover {
+  .thumbnail {
+    transform: scale(1.02);
+    filter: brightness(1.15);
+  }
+  .post-title {
+    opacity: 0.8;
+    font-style: italic;
+  }
+}

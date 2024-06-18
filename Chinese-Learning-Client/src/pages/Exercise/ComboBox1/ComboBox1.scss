@@ -1,0 +1,66 @@
+#combobox1-wrapper {
+  padding: 4rem 2rem 2rem 2rem;
+  .question {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1.6rem;
+    position: relative;
+    .subtitle {
+      position: absolute;
+      top: -0.6rem;
+      font-size: 1.2rem;
+      line-height: 0.8rem;
+    }
+    .css-qiwgdb {
+      padding: 1.2rem;
+    }
+    .combo-box {
+      margin-left: 4rem;
+      margin-right: 2rem;
+      width: 30%;
+      border-radius: 0.4rem;
+      background-image: linear-gradient(#fff 10%, #c2eaf1 60%);
+      .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+        padding: 1.2rem;
+      }
+    }
+    .combo-box.true {
+      background-image: linear-gradient(#fff, #09ef71 100%);
+    }
+    .combo-box.false {
+      background-image: linear-gradient(#fff, #ef0909 100%);
+    }
+    .image {
+      max-width: 80px;
+      max-height: 80px;
+    }
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    .check-btn {
+      font-size: 1.6rem;
+      color: #000;
+      background-color: var(--primary-600);
+    }
+  }
+}
+
+@media (max-width: 46.1875em) {
+  #combobox1-wrapper {
+    padding: 0;
+
+    .question {
+      .combo-box {
+        width: 13rem;
+        border-radius: 0.4rem;
+        background-image: linear-gradient(#fff 10%, #c2eaf1 60%);
+        .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+          padding: 1.2rem;
+        }
+      }
+    }
+  }
+}

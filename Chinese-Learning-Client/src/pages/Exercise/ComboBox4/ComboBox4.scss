@@ -1,0 +1,86 @@
+.image-answer {
+  width: auto;
+  height: 16rem;
+  object-fit: contain;
+}
+
+// tablet
+@media (min-width: 46.25em) and (max-width: 73.9375em) {
+  .image-answer {
+    width: 13rem;
+    height: 10rem;
+    object-fit: contain;
+  }
+  #combobox4-wrapper {
+    .question {
+      .combo-box {
+        width: 18rem !important;
+      }
+    }
+  }
+}
+//mobile
+@media (max-width: 46.1875em) {
+  .image-answer {
+    width: 12rem;
+    height: 8rem;
+  }
+  #combobox4-wrapper {
+    padding: 0 !important;
+    .question {
+      .combo-box {
+        width: 10rem !important;
+      }
+    }
+  }
+}
+
+#combobox4-wrapper {
+  padding: 4rem 2rem 2rem 2rem;
+  .question {
+    // margin-top: 1.6rem;
+    width: 100%;
+    position: relative;
+    align-items: flex-start;
+    justify-content: space-between;
+    .subtitle {
+      position: absolute;
+      top: -0.8rem;
+      font-size: 1.2rem;
+      line-height: 0.8rem;
+    }
+    .css-qiwgdb {
+      padding: 1.2rem;
+    }
+    .combo-box {
+      // margin-left: 4rem;
+      // margin-right: 2rem;
+      width: 24rem;
+      border-radius: 0.4rem;
+      background-image: linear-gradient(#fff 10%, #c2eaf1 60%);
+      .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+        padding: 1.2rem;
+      }
+    }
+    .combo-box.true {
+      background-image: linear-gradient(#fff, #09ef71 100%);
+    }
+    .combo-box.false {
+      background-image: linear-gradient(#fff, #ef0909 100%);
+    }
+    .image {
+      max-width: 80px;
+      max-height: 80px;
+    }
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    .check-btn {
+      font-size: 1.6rem;
+      color: #000;
+      background-color: var(--primary-600);
+    }
+  }
+}

@@ -1,0 +1,78 @@
+.combobox3-answer-list {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  // ::after {
+  //   content: '';
+  //   display: block;
+  //   height: 1px;
+  //   background-color: #000;
+  //   margin-top: 1rem;
+  // }
+}
+.combobox3-question-wrapper {
+  width: 100%;
+  padding: 4rem 2rem 0 2rem;
+}
+
+#combobox3-wrapper {
+  padding: 4rem 2rem 2rem 2rem;
+  .question {
+    margin-top: 1.6rem;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    .subtitle {
+      position: absolute;
+      top: -0.8rem;
+      font-size: 1.2rem;
+      line-height: 0.8rem;
+    }
+    .css-qiwgdb {
+      padding: 1.2rem;
+    }
+    .combo-box {
+      margin-left: 5rem;
+      // margin-right: 2rem;
+      min-width: 10rem;
+      border-radius: 0.4rem;
+      background-image: linear-gradient(#fff 10%, #c2eaf1 60%);
+      .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+        padding: 1.2rem;
+      }
+    }
+    .combo-box.true {
+      background-image: linear-gradient(#fff, #09ef71 100%);
+    }
+    .combo-box.false {
+      background-image: linear-gradient(#fff, #ef0909 100%);
+    }
+    .image {
+      max-width: 80px;
+      max-height: 80px;
+    }
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    .check-btn {
+      font-size: 1.6rem;
+      color: #000;
+      background-color: var(--primary-600);
+    }
+  }
+}
+
+@media (max-width: 46.1875em) {
+  .combobox3-question-wrapper {
+    padding: 0 !important;
+  }
+  #combobox3-wrapper {
+    padding: 0 !important;
+    .combo-box {
+      min-width: 8rem !important;
+    }
+  }
+}

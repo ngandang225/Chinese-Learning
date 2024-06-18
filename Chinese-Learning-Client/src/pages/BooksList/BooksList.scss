@@ -1,0 +1,22 @@
+.books-list-wrapper {
+  padding: 8rem 6rem 8rem 6rem;
+}
+// 125%
+@media (min-width: 70em) and (max-width: 80em) {
+  .books-list-wrapper {
+    padding: 6rem;
+  }
+}
+// Tablet
+@media (min-width: 46.25em) and (max-width: 73.9375em) {
+  .books-list-wrapper {
+    padding: 8rem 6rem 8rem 6rem;
+  }
+}
+// Mobile
+@media (max-width: 46.1875em) {
+  .books-list-wrapper {
+    padding: 6rem 6rem 0 6rem !important;
+    margin-bottom: 0 !important;
+  }
+}

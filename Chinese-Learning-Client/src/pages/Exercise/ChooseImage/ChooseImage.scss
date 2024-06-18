@@ -1,0 +1,65 @@
+@import '../../../theme/global-color.scss';
+#choose-image-wrapper {
+  padding: 4rem 2rem 2rem 2rem;
+  width: 80%;
+  .item {
+    width: 10rem;
+    height: 12rem;
+    cursor: pointer;
+    display: flex;
+    padding: 0.4rem;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba($color: #000000, $alpha: 0.3);
+    .image {
+      max-width: 10rem;
+      max-height: 10rem;
+    }
+    .audio.clicked {
+      animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    @keyframes pulse {
+      0%,
+      100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.5;
+      }
+    }
+  }
+  .item.not-choose {
+    background-color: var(--primary-100);
+  }
+  .item.clicked {
+    // filter: brightness(1.5);
+    background-color: #c2eaf1;
+  }
+  .item.true {
+    background-color: #09ef71;
+  }
+  .item.false {
+    background-color: #ef0909;
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+  }
+}
+// Mobile
+@media (max-width: 46.1875em) {
+  #choose-image-wrapper {
+    margin-left: 0;
+    width: 100%;
+    padding: 2rem 0 0 0;
+    .item {
+      .audio {
+        font-size: 4.8rem;
+      }
+    }
+  }
+}
+// Tablet
+@media (min-width: 46.25em) and (max-width: 73.9375em) {
+}

@@ -1,0 +1,13 @@
+#background-wrapper {
+  position: relative;
+  .slideshow-image {
+    z-index: -3;
+  }
+  .contact {
+    position: absolute;
+    z-index: 1;
+    right: 20px;
+    bottom: 150px;
+    right: 24px;
+  }
+}

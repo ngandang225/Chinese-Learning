@@ -1,0 +1,30 @@
+{
+  "development": {
+    "username": "oufpxxxx_trungvanthuongthuong",
+    "password": "w(WJ$M6)xxxx",
+    "database": "oufpxxxx_trungvanthuongthuong",
+    "host": "trungvanthuongthuong.com",
+    "dialect": "mysql",
+    "logging": false,
+    "timezone": "+07:00"
+
+  },
+  "test": {
+    "username": "oufpxxxx_trungvanthuongthuong",
+    "password": "w(WJ$M6)xxxx",
+    "database": "oufpxxxx_trungvanthuongthuong",
+    "host": "trungvanthuongthuong.com",
+    "dialect": "mysql",
+    "logging": false,
+    "timezone": "+07:00"
+  },
+  "production": {
+    "username": "oufpxxxx_trungvanthuongthuong",
+    "password": "w(WJ$M6)xxxx",
+    "database": "oufpxxxx_trungvanthuongthuong",
+    "host": "trungvanthuongthuong.com",
+    "dialect": "mysql",
+    "logging": false,
+    "timezone": "+07:00"
+  }
+}

@@ -1,0 +1,40 @@
+.listen-and-read-wrapper {
+  .question-1-wrapper {
+    display: flex;
+    .question-1 {
+      margin-left: 8rem;
+    }
+  }
+  .long-read-question-wrapper {
+    margin-left: 8rem;
+  }
+}
+// Tablet
+@media (min-width: 46.25em) and (max-width: 73.9375em) {
+  .listen-and-read-wrapper {
+    .question-1-wrapper {
+      .question-1 {
+        margin-left: 2rem;
+      }
+    }
+  }
+}
+// Mobile
+@media (max-width: 46.1875em) {
+  .listen-and-read-wrapper {
+    .audio-wrapper {
+      width: 100%;
+      .audio {
+        width: 100% !important;
+      }
+    }
+    .question-1-wrapper {
+      .question-1 {
+        margin-left: -0.8rem;
+      }
+    }
+    .long-read-question-wrapper {
+      margin-left: 0;
+    }
+  }
+}

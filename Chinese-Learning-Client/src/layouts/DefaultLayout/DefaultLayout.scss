@@ -1,0 +1,114 @@
+.default-layout {
+  position: relative;
+
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 3;
+    .contact {
+      position: fixed;
+      z-index: 2;
+      right: 24px;
+      bottom: 150px;
+    }
+  }
+
+  .body-container {
+    color: #d9e6ee;
+    width: 100%;
+    position: absolute;
+    top: 160px;
+    z-index: 1;
+    margin: auto;
+
+    .content-container {
+      border-radius: 10px 10px 0px 0px;
+      min-height: 1000px;
+      background-color: #f8fbfd;
+      width: 100%;
+      /* Thêm các kiểu CSS cho phần nội dung chính ở đây */
+    }
+  }
+  .body-container-top {
+    position: absolute;
+    top: 100vh;
+    z-index: 1;
+    width: 100%;
+    // border-radius: 10px;
+    .content-container {
+      width: 100%;
+      /* Thêm các kiểu CSS cho phần nội dung chính ở đây */
+    }
+  }
+}
+// Mobile
+@media (max-width: 46.1875em) {
+  .home-body-wrapper,
+  .body-wrapper {
+    margin: 0 !important;
+  }
+}
+// Tablet
+@media (min-width: 46.25em) and (max-width: 73.9375em) {
+  .home-body-wrapper {
+    margin: 40px !important;
+  }
+  .body-wrapper {
+    margin: 40px !important;
+  }
+  .default-layout {
+    .body-container {
+      .content-container {
+        margin-top: -8rem;
+      }
+    }
+  }
+  .small-default-layout {
+    .small-layout-header {
+      margin-top: -4rem;
+    }
+  }
+}
+
+// Small layout
+.small-default-layout {
+  position: relative;
+
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 3;
+    .contact {
+      position: fixed;
+      z-index: 2;
+      right: 24px;
+      bottom: 150px;
+    }
+  }
+
+  .body-container {
+    color: #d9e6ee;
+    width: 100%;
+    position: absolute;
+    top: 84px;
+    z-index: 1;
+    margin: auto;
+    .content-container {
+      border-radius: 10px 10px 0px 0px;
+      background-color: #f8fbfd; /* #f8fbfd*/
+      width: 100%;
+      /* Thêm các kiểu CSS cho phần nội dung chính ở đây */
+    }
+  }
+  .body-container-top {
+    position: absolute;
+    top: 100vh;
+    z-index: 1;
+    .content-container {
+      // width: 100%;
+      /* Thêm các kiểu CSS cho phần nội dung chính ở đây */
+    }
+  }
+}

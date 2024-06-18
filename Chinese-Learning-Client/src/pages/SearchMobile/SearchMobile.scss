@@ -1,0 +1,38 @@
+.search-container {
+  display: flex;
+  flex-direction: column;
+  .search-bar {
+    height: 48px;
+    width: 100%;
+    font-size: 13px;
+    position: fixed;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    z-index: 2;
+    background-color: #fff;
+    padding-right: 4px;
+  }
+  .search-result {
+    flex-direction: column;
+    border-radius: 8px;
+    top: 48px;
+    width: 100%;
+    position: absolute;
+    list-style: none;
+    background-color: #fff; /* Set the background color for the search results */
+    margin: 0; /* Remove any default margins */
+    li {
+      display: flex;
+      align-items: center;
+      border-radius: 4px;
+      padding: 8px; /* Add padding to the search results */
+      width: 100%;
+      // margin-bottom: 5px;
+      cursor: pointer; /* Add a cursor pointer to indicate that the search results are clickable */
+    }
+    li:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+}

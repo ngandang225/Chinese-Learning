@@ -1,0 +1,39 @@
+#login-wrapper {
+  .form-wrapper {
+    font-size: 1.6rem;
+    margin-top: 40px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border: 1px solid #ccc;
+    .css-md26zr-MuiInputBase-root-MuiOutlinedInput-root {
+      font-size: 1.6rem;
+    }
+    .css-nxo287-MuiInputBase-input-MuiOutlinedInput-input {
+      font-size: 1.6rem;
+    }
+
+    .css-ywtyjy-MuiButtonBase-root-MuiButton-root:hover {
+      background-color: #ffeb3b;
+    }
+  }
+  .css-1uvydh2,
+  .css-1x5jdmq {
+    font-size: 1.6rem !important;
+  }
+  .css-1ig1k2d:hover {
+    background-color: #ffeb3b !important;
+  }
+  .alert {
+    margin-top: 2rem;
+    width: 50%;
+    font-size: 1.4rem;
+  }
+  // .MuiAlert-message.css-1pxa9xg-MuiAlert-message {
+  //   font-size: 1.6rem !important;
+  // }
+  // .css-1hdyuqk-MuiPaper-root-MuiAlert-root {
+  //   margin-top: 4rem !important;
+  // }
+}

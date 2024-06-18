@@ -1,0 +1,141 @@
+#true-false-wrapper {
+  padding: 4rem 2rem 2rem 2rem;
+  width: 80%;
+  .true-false-text-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    .true-false-text {
+      text-align: end;
+      width: 18%;
+      display: flex;
+      justify-content: space-between;
+      margin-right: 1.2rem;
+    }
+  }
+  .question {
+    border: 1px solid rgba($color: #000000, $alpha: 0.6);
+    border-radius: 3rem;
+    display: flex;
+    padding-right: 2rem;
+    padding-left: 1.2rem;
+    align-items: center;
+    margin-bottom: 1.2rem;
+    min-height: 6.8rem;
+    position: relative;
+    .image {
+      position: absolute;
+      margin-left: -1.2rem;
+      .image-item {
+        max-width: 8rem;
+        max-height: 8rem;
+      }
+    }
+    .content {
+      margin-left: 8.4rem;
+      width: 60% !important;
+    }
+    .answer {
+      display: none;
+      position: absolute;
+      color: red;
+      font-size: 3rem;
+      top: 10%;
+      left: 101%;
+    }
+    .answer.false {
+      display: block;
+    }
+    .box-wrapper {
+      position: absolute;
+      right: 1.2rem;
+      display: flex;
+      width: 17%;
+      justify-content: space-between;
+      .true-box {
+        border: 1px solid rgba($color: #000000, $alpha: 0.6);
+        background-color: #d8e4be;
+        width: 2.6rem;
+        height: 2.6rem;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .true-box.clicked {
+        position: relative;
+        background-color: greenyellow;
+        &::after {
+          content: '✔'; /* Dấu tích unicode */
+          color: #000;
+          font-size: 1.6rem;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+      .false-box {
+        border: 1px solid rgba($color: #000000, $alpha: 0.6);
+        background-color: #e6b8b8;
+        width: 2.6rem;
+        height: 2.6rem;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .false-box.clicked {
+        position: relative;
+        background-color: red;
+        &::after {
+          content: '✔'; /* Dấu tích unicode */
+          color: #000;
+          font-size: 1.6rem;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    .check-btn {
+      font-size: 1.6rem;
+      color: #000;
+      background-color: var(--primary-600);
+    }
+  }
+}
+// Tablet
+@media (min-width: 46.25em) and (max-width: 73.9375em) {
+  #true-false-wrapper {
+    width: 100% !important;
+  }
+}
+// Mobile
+@media (max-width: 46.1875em) {
+  #true-false-wrapper {
+    margin-left: 0 !important;
+    width: 100% !important;
+    padding: 4rem 0 0 0;
+    .true-false-text-wrapper {
+      .true-false-text {
+        .true-text {
+          margin-right: 0.8rem;
+        }
+      }
+    }
+    .question {
+      .image {
+        .image-item {
+          max-width: 6rem;
+          max-height: 6rem;
+        }
+      }
+      .content {
+        margin-left: 5.6rem;
+        width: 65% !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.fill-in-blanks-wrapper {
+  display: flex;
+  flex-direction: column;
+  .css-1eed5fa-MuiInputBase-root-MuiInput-root::after {
+    border-bottom: 2px solid var(--primary-900);
+  }
+  .css-jcincl::after {
+    border-bottom: 2px solid var(--primary-900);
+  }
+  .css-mnn31 {
+    font-size: 1.6rem;
+    padding: 0;
+    text-align: center;
+  }
+  .css-1x51dt5-MuiInputBase-input-MuiInput-input {
+    margin-top: 0.05rem;
+    font-size: 1.6rem;
+    padding: 0;
+    text-align: center;
+    // color: var(--primary-900);
+  }
+  .question-5-wrapper {
+    margin-top: 2rem;
+    .question-5 {
+      display: flex;
+      .question-key.true {
+        color: red;
+        font-style: italic;
+      }
+    }
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+  }
+}
+
+// Mobile
+@media (max-width: 46.1875em) {
+  .fill-in-blanks-wrapper {
+    .question-5-wrapper {
+      margin-top: 0;
+      .question-5 {
+        margin-left: -1.2rem;
+        margin-right: 1.2rem;
+      }
+    }
+  }
+}

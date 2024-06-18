@@ -1,0 +1,43 @@
+@import '../../../theme/global-color.scss';
+#fill-in-tones-wrapper {
+  margin-top: 2.8rem;
+  .audio-wrapper {
+    margin-bottom: 2rem;
+  }
+  .option-list {
+    background-color: #bce5fb;
+    padding: 0.8rem 0.4rem 0.4rem 0.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-style: italic;
+    justify-content: space-evenly;
+    .option-item-wrapper {
+      min-height: 4rem;
+      cursor: pointer;
+      margin-bottom: 0.4rem;
+      margin-right: 0.2rem;
+    }
+  }
+  .question {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.2rem;
+    .box {
+      cursor: pointer;
+      height: 4rem;
+      width: 10rem;
+      padding: 0 10px 50px 10px;
+      border-bottom: 2px solid #98bad5;
+    }
+    .box.false {
+      border-color: red;
+    }
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+  }
+}

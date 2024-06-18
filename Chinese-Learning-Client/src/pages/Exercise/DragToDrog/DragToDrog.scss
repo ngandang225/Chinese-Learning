@@ -1,0 +1,107 @@
+#drag-to-drop-wrapper {
+  padding: 4rem 2rem 2rem 2rem;
+  // background-image: linear-gradient(#fff, #c6c8f4, #fff);
+  .option-list {
+    border: 1px solid rgba($color: #0b12a5, $alpha: 0.4);
+    padding: 0.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-style: italic;
+    justify-content: space-evenly;
+    .option-item-wrapper {
+      min-height: 4rem;
+      cursor: pointer;
+      // .option-item {
+      //   color: #000;
+      //   font-style: normal;
+      //   padding: 0.8rem 2rem;
+      //   border: 1px solid #0b12a5;
+      // }
+    }
+  }
+  .question {
+    display: flex;
+    align-items: end;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 4rem;
+    position: relative;
+    .subtitle {
+      position: absolute;
+      top: 0.4rem;
+      left: 3.2rem;
+      font-size: 1.2rem;
+      line-height: 1.3rem;
+    }
+    .question-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      .box {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 4.8rem;
+        min-width: 16rem;
+        color: #0b12a5;
+        font-weight: bold;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        border-bottom: 1px solid rgba($color: #0b12a5, $alpha: 0.4);
+      }
+      .box.true {
+        background-image: linear-gradient(#fff, #09ef71 100%) !important;
+      }
+      .box.false {
+        background-image: linear-gradient(#fff, #ef0909 100%) !important;
+      }
+    }
+    .image {
+      max-width: 80px;
+      max-height: 80px;
+    }
+  }
+  .option-item {
+    width: fit-content;
+    font-style: normal;
+    padding: 0.4rem 2rem;
+    border: 1px solid #0b12a5;
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    .check-btn {
+      font-size: 1.6rem;
+      color: #000;
+      background-color: var(--primary-600);
+    }
+  }
+}
+// Mobile
+@media (max-width: 46.1875em) {
+  #drag-to-drop-wrapper {
+    padding: 2rem 1rem 1rem 1rem;
+    .question {
+      margin-top: 3.2rem !important;
+      .subtitle {
+        top: 0.4rem;
+      }
+      .question-content {
+        margin-top: 1.2rem;
+      }
+      .image {
+        display: none;
+      }
+    }
+    .answer-wrapper {
+      margin-left: 0 !important;
+    }
+    .box {
+      height: 3.6rem !important;
+      min-width: 12rem !important;
+    }
+  }
+}

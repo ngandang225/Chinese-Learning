@@ -1,0 +1,53 @@
+.fill-in-number-wrapper {
+  display: flex;
+  flex-direction: column;
+  .css-1eed5fa-MuiInputBase-root-MuiInput-root::after {
+    border-bottom: 2px solid var(--primary-900);
+  }
+  .css-1eed5fa-MuiInputBase-root-MuiInput-root {
+    color: inherit;
+  }
+  .css-jcincl::after {
+    border-bottom: 2px solid var(--primary-900);
+  }
+  .css-jcincl {
+    color: inherit;
+  }
+  .css-mnn31 {
+    font-size: 1.6rem;
+    padding: 0;
+    text-align: center;
+  }
+  .css-1x51dt5-MuiInputBase-input-MuiInput-input {
+    margin-top: 0.05rem;
+    font-size: 1.6rem;
+    padding: 0;
+    text-align: center;
+    // color: var(--primary-900);
+  }
+  .question-7-wrapper {
+    margin-top: 1.2rem;
+    .question-key {
+      width: fit-content;
+      padding: 0.6rem 0.6rem 0 0.6rem;
+      background-color: var(--primary-500);
+    }
+    .textfield-word.true {
+      color: green !important;
+    }
+    .textfield-word.false {
+      color: red !important;
+    }
+    // .question-key.false {
+    //   // background-color: red;
+    // }
+    // .question-key.true {
+    //   // background-color: green;
+    // }
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+  }
+}

@@ -1,0 +1,265 @@
+@import '../../theme/global-color.scss';
+.header-container {
+  width: 100%;
+  padding: 0 160px;
+  background-color: rgba($color: #fdd835, $alpha: 0.96);
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 10;
+  .logo {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .right-site {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 1;
+    max-width: 85%;
+    .search-bar {
+      font-size: 13px;
+      position: relative;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      /* Customize the scrollbar track */
+
+      ::-webkit-scrollbar {
+        width: 4px;
+        background-color: #999999 #f5f5f5;
+      }
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background-color: transparent;
+        position: relative;
+      }
+      ::-webkit-scrollbar-track::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #f5f5f5;
+        border-radius: 8px;
+      }
+
+      /* Customize the scrollbar thumb (the draggable handle) */
+      ::-webkit-scrollbar-thumb {
+        background-color: #999999;
+        border-radius: 8px;
+      }
+      .search-result {
+        flex-direction: column;
+        border-radius: 8px;
+        top: 40px;
+        width: 310px;
+        max-height: 310px;
+        position: absolute;
+        list-style: none;
+        background-color: #fff;
+        overflow: auto;
+        margin: 0; /* Remove any default margins */
+
+        li {
+          display: flex;
+          align-items: center;
+          padding: 8px;
+          width: 100%;
+        }
+        li:hover {
+          background-color: rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+    .nav-bar {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 80%;
+      margin-right: 0;
+      margin-left: 20rem;
+      .nav-content {
+        font-size: 1.4rem;
+        a {
+          padding: 12px 16px;
+          text-decoration: none;
+          color: #000;
+          border-bottom: 2px solid var(--primary-700);
+          &:hover {
+            background-color: var(--primary-200);
+          }
+        }
+        .skill-nav.background-hover {
+          background-color: var(--primary-200);
+        }
+        .skill-item {
+          width: 100%;
+          padding: 1.2rem;
+          text-decoration: none;
+          a {
+            &:hover {
+              background-color: rgba(240, 245, 255, 0);
+            }
+          }
+          &:hover {
+            background-color: var(--primary-200);
+          }
+          .listening-list {
+            .listening-item:hover {
+              background-color: var(--primary-100);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.mobile-header-container {
+  display: none;
+}
+// 125%
+@media (min-width: 70em) and (max-width: 80em) {
+  .header-container {
+    .logo {
+      width: 11rem;
+      height: 11rem;
+    }
+    .right-site {
+      .search-bar {
+        font-size: 0.2rem !important;
+        .search-result {
+          font-size: 1.3rem !important;
+        }
+      }
+      .nav-bar {
+        margin-left: 15rem;
+      }
+      ul.nav-bar {
+        li.nav-content {
+          font-size: 1.3rem !important;
+        }
+      }
+    }
+  }
+  .mobile-header-container {
+    display: none;
+  }
+}
+// Tablet
+@media (min-width: 46.25em) and (max-width: 73.9375em) {
+  // max-width: 63.9375em
+  .header-container {
+    padding: 0 4rem;
+    .logo {
+      width: 8rem;
+      height: 8rem;
+    }
+    .right-site {
+      .search-bar {
+        .search-input {
+          height: 32px;
+        }
+      }
+      .nav-bar {
+        margin-left: 12rem;
+        .nav-content {
+          font-size: 1.2rem;
+          a {
+            padding: 1rem 0.4rem;
+            // pointer-events: none;
+          }
+        }
+      }
+    }
+  }
+  .mobile-header-container {
+    display: none;
+  }
+}
+// Mobile
+@media (max-width: 46.1875em) {
+  .header-container {
+    display: none;
+  }
+  .mobile-header-container {
+    height: 7.2rem;
+    width: 100%;
+    padding: 0 0.8rem;
+    background-color: rgba($color: #fdd835, $alpha: 0.96);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    .logo {
+      width: 5.6rem;
+      height: 5.6rem;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    // .right-site {
+    //   flex: 0 0 74%;
+    //   display: flex;
+    //   justify-content: space-between;
+    //   align-items: center;
+    .search-bar {
+      // margin-left: 2rem;
+      // margin-right: 2rem;
+      font-size: 13px;
+      position: relative;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+    }
+    .nav-bar {
+      background-color: var(--primary-600);
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      .nav-content {
+        font-size: 1.6rem;
+        padding: 0.8rem 1.2rem;
+        a {
+          text-decoration: none;
+          color: #000;
+        }
+        .skill-item {
+          width: 100%;
+          padding: 0.8rem;
+          text-decoration: none;
+        }
+      }
+    }
+    .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiAccordion-root.MuiAccordion-rounded.MuiAccordion-gutters.css-1wz20g3,
+    .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiAccordion-root.MuiAccordion-rounded.MuiAccordion-gutters.css-1c35hjw-MuiPaper-root-MuiAccordion-root {
+      background-color: transparent;
+      box-shadow: none;
+    }
+    .MuiButtonBase-root.MuiAccordionSummary-root.MuiAccordionSummary-gutters.css-1iji0d4,
+    .MuiButtonBase-root.MuiAccordionSummary-root.MuiAccordionSummary-gutters.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
+      min-height: 0;
+      padding: 0;
+    }
+    .MuiAccordionSummary-content.MuiAccordionSummary-contentGutters.css-17o5nyn,
+    .MuiAccordionSummary-content.MuiAccordionSummary-contentGutters.css-o4b71y-MuiAccordionSummary-content {
+      margin: 0;
+    }
+    .MuiAccordionDetails-root.css-u7qq7e,
+    .MuiAccordionDetails-root.css-15v22id-MuiAccordionDetails-root {
+      padding: 0.8rem 2rem;
+    }
+    .css-vubbuv,
+    .css-i4bv87-MuiSvgIcon-root {
+      font-size: 2rem !important;
+    }
+  }
+}

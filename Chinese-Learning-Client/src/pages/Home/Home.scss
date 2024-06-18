@@ -1,0 +1,23 @@
+@import '../../theme/global-color.scss';
+.home-wrapper {
+  border-radius: 10px 10px 0px 0px;
+  background-image: linear-gradient(#fafaf6 20%, #fff9c4 50%, #fafaf6 90%);
+  .content {
+    margin: 0 auto; // Căn giữa theo chiều ngang
+  }
+
+  .title {
+    margin-bottom: 12px;
+    width: 320px;
+    border-bottom: 1px solid var(--primary-600);
+    h2 {
+      width: auto;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase;
+      color: var(--primary-700);
+      margin: 12px;
+    }
+  }
+}
